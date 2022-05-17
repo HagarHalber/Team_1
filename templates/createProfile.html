@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Team_1/profile.css"> 
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="list-item">
+                <a href="HomePage.html">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="About Us">About Us</a>
+            </li>
+            <li class="list-item">
+                <a href="contactUs">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>
+        Create Your Profile
+    </h1>
+    
+    <form action="URL" method="post">
+        <div>
+        <label  for="First_Name">First Name:</label>
+        <input type="text" id="First_Name" name="First_Name" required><br>
+        
+        <label id="lastName" for="Last_Name" >Last Name:</label>
+        <input type="text" id="Last_Name" name="Last_Name" required><br>
+       
+        <label id="age" for="Age" >Your Age:</label>
+        <input type="number" id="Age" name="Age" min="14"><br>
+
+        <label id="Startdates" for="StartDates" >I Want To Travel From:</label>
+        <input type="date" id="startDates" name="StartDates" required>
+
+        <label id="enddates" for="endDates" >To:</label>
+        <input type="date" id="endDates" name="EndDates" required><br>
+
+        <label  id="bigGroups" for="bigGroups" >Travel in big groups?</label>
+        <input type="checkbox" id="bigGroups" name="bigGroups" ><br>
+
+        <label for="cars">Spoken Language:</label>
+
+        <select name="language" id="language">
+            <option value="english">English</option>
+            <option value="hebrew">Hebrew</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Greman">Greman</option>
+            <option value="Italian">Italian</option>
+            <option value="french">french</option>
+            <option value="mandarin">Mandarin</option>
+        </select> <br>
+
+        <label id="budget" for="budget" >Your Budget Per Week:</label>
+        <input type="number" id="Budget" name="Budget" min="0"> $ <br>
+
+        <label for="hobbies">Hobbies:</label>
+
+        <select name="hobbies" id="hobbies">
+            <option value="Hiking">Hiking</option>
+            <option value="Painting">Painting</option>
+            <option value="Sports"> Doing Sports</option>
+            <option value="Sculpt">Sculpting</option>
+            <option value="books">Reading books</option>
+            <option value="Baking">Baking</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Yoga">Yoga</option>
+        </select> <br>
+
+
+
+        <div>
+            <label for="freeText" >About You:</label><br>
+            <textarea name="freeText" id="freeText" cols="50" rows="8"></textarea><br>
+            </div>
+
+        </div>
+        
+        
+
+
+
+
+
+</body>
+</html>
