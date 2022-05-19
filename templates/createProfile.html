@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../Team_1/profile.css"> 
+    <link rel="stylesheet" href="../static/tripal_styling.css"> 
 </head>
 
-<body>
+<body id="createProfile_body">
 
     <nav class="nav">
         <ul class="nav-list">
@@ -24,12 +24,12 @@
         </ul>
     </nav>
 
-    <h1>
+    <h1 id="createProfile_h1">
         Create Your Profile
     </h1>
     
-    <form action="URL" method="post">
-        <div>
+    <form action="URL" method="post" id="form_createProfile">
+        <div id="main_createProfile">
         <label  for="First_Name">First Name:</label>
         <input type="text" id="First_Name" name="First_Name" required><br>
         
@@ -62,7 +62,7 @@
         </select> <br>
 
         <label id="budget" for="budget" >Your Budget Per Week:</label>
-        <input type="number" id="Budget" name="Budget" min="0"> $ <br>
+        <input type="number" id="Budget" name="Budget" min="0"> US$ <br>
 
         <label for="hobbies">Hobbies:</label>
 
@@ -85,12 +85,5 @@
             </div>
 
         </div>
-        
-        
-
-
-
-
-
 </body>
 </html>
