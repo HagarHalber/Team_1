@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="../static/tripal_styling.css">
-    <script defer src="../static/sing-upJS.js"></script>
+    <script defer src="../static/tripal_js.js"></script>
 </head>
 <body id="signUpBody">
-    <nav class="nav">
+    <nav class="nav" id="nav_signUp">
         <ul class="nav-list">
             <li class="list-item">
                 <a href="HomePage.html">Home</a>
@@ -31,7 +31,7 @@
                 <input type="tel" placeholder="Phone Number" class="input_signUp" required>
                 <input type="email" placeholder="Email" class="input_signUp" required/>
                 <input type="password" placeholder="Password" class="input_signUp" required/>
-                <button>Sign Up</button>
+                <button id="signUp_button"><a href="createProfile.html"> Sign Up</a></button>
             </form>
         </div>
         <div class="form-container sign-in-container">
