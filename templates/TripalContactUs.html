@@ -4,66 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/contactCSS.css">
     <title>TriPal- Contact Us</title>
-    
 </head>
-<body id="ContactPage">
-    <h1 id="Header">Contact U</h1>
+<body class= "contactBody">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="list-item">
+                <a href="HomePage.html">Home</a>
+            </li>
+            <li class="list-item">
+                <a href="TripalAboutUs.html">About Us</a>
+            </li>
+            <li class="list-item">
+                <a href="TripalContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="Header">Contact Us</h1>
     
-    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-        <script type="text/javascript">
-        function ValidateForm(frm) {
-        if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-        if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-        if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-        return true; }
-        </script>
-        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+   
+        <form action="/action_page.php" method="get">
+        <table  cellpadding="8" cellspacing="0">
         <tr> <td>
+       
         <label for="Name">Name*:</label>
         </td> <td>
-        <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+        <input name="Name" type="text" required maxlength="60" />
         </td> </tr> <tr> <td>
         <label for="PhoneNumber">Phone number:</label>
         </td> <td>
-        <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+        <input name="PhoneNumber" type="text" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required placeholder="123-4567-8901" />
         </td> </tr> <tr> <td>
         <label for="FromEmailAddress">Email address*:</label>
         </td> <td>
-        <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
-        </td> </tr> <tr> <td>
+        <input name="FromEmailAddress" type="text" required pattern="[^ @]*@[^ @]*.com"  />
+        </td> </tr> <tr> <td>    
         <label for="Comments">Your Message*:</label>
         </td> <td>
-        <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+        
+        <textarea name="Comments" rows="7" cols="40" required></textarea>
         </td> </tr> <tr> <td>
         * - required fields
         </td> <td>
-  
         <input name="skip_Submit" type="submit" value="Submit" />
-        
         </td> </tr>
         </table>
         </form>
 
-        <style>
-            #ContactPage {
-                background-image: url('');
-                padding: 10%;
-                font-family:Arial, Helvetica, sans-serif ;
-                font-size: 12px; 
-            }
-            @font-face{
-             font-family: fonttry;
-             src: url(../Downloads/);
-           }
+<!-- <div class="image">
+    <image src="../static/waterfall.jpg" height="700px" width="750px"></image>
+</div> -->
 
-           .Header {
-            color:rgb(100, 90, 90); font-size: 30px;
-            text-align:center;
-            float: center;
-            
-        }
-        </style>
+
+       
 </body>
 </html>
+
+
+<!-- style="width:100%;max-width:350px;" -->
+
