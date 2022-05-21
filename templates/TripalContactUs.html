@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/contactCSS.css">
+    <link rel="stylesheet" href="../static/tripal_styling.css">
     <title>TriPal- Contact Us</title>
 </head>
 <body class= "contactBody">
-    <nav class="nav">
+    <nav class="nav" id="nav_contactUs">
         <ul class="nav-list">
             <li class="list-item">
                 <a href="HomePage.html">Home</a>
@@ -22,10 +22,10 @@
         </ul>
     </nav>
 
-    <h1 id="Header">Contact Us</h1>
+    <h1 id="Header_contactUs">Contact Us</h1>
     
    
-        <form action="/action_page.php" method="get">
+        <form action="/action_page.php" method="get" id="form_contactUs">
         <table  cellpadding="8" cellspacing="0">
         <tr> <td>
        
@@ -45,24 +45,14 @@
         <label for="Comments">Your Message*:</label>
         </td> <td>
         
-        <textarea name="Comments" rows="7" cols="40" required></textarea>
+        <textarea  id="your_message" name="Comments" rows="7" cols="40" required></textarea>
         </td> </tr> <tr> <td>
         * - required fields
         </td> <td>
-        <input name="skip_Submit" type="submit" value="Submit" />
+        <input name="skip_Submit" type="submit" value="Submit" id="submit_contactUs"/>
         </td> </tr>
         </table>
         </form>
-
-<!-- <div class="image">
-    <image src="../static/waterfall.jpg" height="700px" width="750px"></image>
-</div> -->
-
-
-       
+   
 </body>
 </html>
-
-
-<!-- style="width:100%;max-width:350px;" -->
-

@@ -169,10 +169,14 @@ button.ghost {
 	text-align: center;
 }
 
-.input_signUp {
+input, #your_message{
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
+
+}
+
+.input_signUp{
 	margin: 8px 0;
 	width: 100%;
 }
@@ -378,5 +382,47 @@ button.ghost {
 	margin-top: 5%;
 }
 
+.contactBody{
+    background: url("../static/waterfall.jpg") no-repeat;;
+    Background-size: 50% 200%;
+    Background-position: right;
+    font-size: 17px; 
+    color: rgb(53, 89, 155);
+	padding-left: 3%;
+	font-size: larger;
+    
+}
 
+#Header_contactUs {
+	color:rgb(100, 90, 90); font-size: 30px;
+	text-align:left;
+	float: center;
+	font-weight: bold;
+	font-size: 50px;
+	}
+
+	@media only screen and (max-width: 1000px){
+
+		.contactBody{
+			background: url("../static/waterfall.jpg") no-repeat;
+			Background-size: 100% 100%;
+			Background-position: center;
+			font-size: 17px; 
+			color: rgb(53, 89, 155);
+			font-weight: bold;
+		}
+		#form_contactUs, #Header_contactUs{
+			background-color: rgba(255, 255, 255,0.6);
+			padding-left: 2%;
+		}
+	}
+	#nav_contactUs{
+		background-color: rgba(255, 255, 255,0.6);
+		font-size: smaller;
+	}
+
+	#submit_contactUs{
+		padding: 5%;
+		cursor: pointer;
+	}
 
