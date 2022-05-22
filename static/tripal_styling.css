@@ -333,6 +333,8 @@ input, #your_message{
 #createProfile_h1{
     margin-left: 40%;
     font-size:250%;
+	color: white;
+	margin-left: 30%;
 }
 
 #createProfile_body{
@@ -341,16 +343,38 @@ input, #your_message{
 	background-size: 100% 100%;
     background-position-y: 70px;
 	backdrop-filter: blur(10px);
+	color: white;
+	font-size: x-large;
 }
 
 #main_createProfile {
 	background: none;
+	text-align: left;
+	
+	
 }
 
 #form_createProfile {
 	padding-left: 40%;
 	padding-top: 0%;
 }
+
+#left_content {
+	margin-left: -60%;
+	
+}
+
+#right_content {
+	margin-left: 30%;
+	margin-top: -45%;
+}
+
+#create_button{
+	margin-top: 15%;
+	margin-left: -45%;
+}
+
+
 
 .Header_aboutUs {
 	color:rgb(100, 90, 90); font-size: 40px;
@@ -425,4 +449,14 @@ input, #your_message{
 		padding: 5%;
 		cursor: pointer;
 	}
+
+
+
+
+
+
+
+
+
+
 

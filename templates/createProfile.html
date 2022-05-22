@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TriPal- Create Profile</title>
     <link rel="stylesheet" href="../static/tripal_styling.css"> 
+   <!----<script src="multi-input.js"></script>   --------->
 </head>
 
 <body id="createProfile_body">
@@ -30,6 +31,8 @@
     
     <form action="URL" method="post" id="form_createProfile">
         <div id="main_createProfile">
+
+            <div id="left_content">
         <label  for="First_Name">First Name:</label>
         <input type="text" id="First_Name" name="First_Name" required><br>
         
@@ -37,7 +40,7 @@
         <input type="text" id="Last_Name" name="Last_Name" required><br>
        
         <label id="age" for="Age" >Your Age:</label>
-        <input type="number" id="Age" name="Age" min="14"><br>
+        <input type="number" id="Age" name="Age" min="18"><br>
 
         <label id="Startdates" for="StartDates" >I Want To Travel From:</label>
         <input type="date" id="startDates" name="StartDates" required>
@@ -48,18 +51,30 @@
         <label  id="bigGroups" for="bigGroups" >Travel in big groups?</label>
         <input type="checkbox" id="bigGroups" name="bigGroups" ><br>
 
-        <label for="cars">Spoken Language:</label>
+        <label for="languages">Spoken Language:</label>
+            <select name="SpokenLanguage" id="SpokenLanguage">
+                <option value="english">English</option>
+                <option value="hebrew">Hebrew</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Greman">Greman</option>
+                <option value="Italian">Italian</option>
+                <option value="french">french</option>
+                <option value="mandarin">Mandarin</option>
+            </select required> <br>
 
-        <select name="language" id="language">
-            <option value="english">English</option>
-            <option value="hebrew">Hebrew</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Greman">Greman</option>
-            <option value="Italian">Italian</option>
-            <option value="french">french</option>
-            <option value="mandarin">Mandarin</option>
-        </select> <br>
+            <div>
+                <label for="photo" >Apload Your Profile:</label><br>
+                <input type="file" id="myFile" name="filename" required>
+                <input type="submit">
+            </div>
+
+
+        </div>
+
+
+        <div id="right_content">
+ 
 
         <label id="budget" for="budget" >Your Budget Per Week:</label>
         <input type="number" id="Budget" name="Budget" min="0"> US$ <br>
@@ -78,12 +93,41 @@
         </select> <br>
 
 
+        <label for="Vibes">My Vibe:</label>
 
-        <div>
+        <select name="Vibes" id="Vibes">
+            <option value="Extreme">Extreme</option>
+            <option value="Relaxed">Relaxed</option>
+            <option value="Adventurous"> Adventurous</option>
+            <option value="Flowing">Flowing</option>
+            <option value="Strolling">Strolling</option>
+            <option value="Traveling">Traveling</option>
+            <option value="Trekking">Trekking</option>
+            <option value="shopping">Shopping</option>
+            <option value="chilling">Chilling</option>
+        </select> <br>
+
+            <div>
             <label for="freeText" >About You:</label><br>
-            <textarea name="freeText" id="freeText" cols="50" rows="8"></textarea><br>
+            <textarea name="freeText" id="freeText" cols="50" rows="12"></textarea><br>
+
+            <label for="facebook_link" >Your Facebook Profile:</label>
+            <textarea name="Facebook" id="Facebook" cols="30" rows="1"></textarea><br>
+
+            <label for="instagram_link" >Your Instagram Profile:</label>
+            <textarea name="Instagram" id="Instagram" cols="29" rows="1"></textarea><br>
             </div>
 
-        </div>
+            <div id="create_button">
+                <button type="button"> Create Your Profile <br>
+            </div>
+
+
+
+        
+
+        </div> 
+
+      
 </body>
 </html>
