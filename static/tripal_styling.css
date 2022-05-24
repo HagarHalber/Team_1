@@ -84,13 +84,6 @@ footer{
     src: url(../static/ShadowsIntoLight-Regular.ttf);
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
 * {
 	box-sizing: border-box;
 }
@@ -418,9 +411,9 @@ input, #your_message{
 }
 
 .contactBody{
-    background: url("../static/waterfall.jpg") no-repeat;;
-    Background-size: 50% 200%;
-    Background-position: right;
+    background: url("../static/background_contactUs.jpg") no-repeat;;
+    Background-size: 100% 100%;
+    Background-position-y: 70px;
     font-size: 17px; 
     color: rgb(53, 89, 155);
 	padding-left: 3%;
@@ -434,21 +427,44 @@ input, #your_message{
 	float: center;
 	font-weight: bold;
 	font-size: 50px;
+	text-align: center;
+	padding-bottom: 5%;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+
+	}
+
+	#form_contactUs{
+		justify-content: center;
+		padding-left: 17%;
+		border-top: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		font-weight: bold;
+
+	}
+
+	#Header_contactUs, #form_contactUs{
+		margin-left: 15%;
+		margin-right: 15%;
+		background-color: rgba(205, 242, 243,0.7);
+
 	}
 
 	@media only screen and (max-width: 1000px){
 
 		.contactBody{
-			background: url("../static/waterfall.jpg") no-repeat;
-			Background-size: 100% 100%;
-			Background-position: center;
 			font-size: 17px; 
 			color: rgb(53, 89, 155);
 			font-weight: bold;
 		}
 
 		#form_contactUs, #Header_contactUs{
-			background-color: rgba(255, 255, 255,0.6);
+			background-color: rgba(205, 242, 243,0.7);
 			padding-left: 2%;
 		}
 
@@ -463,21 +479,24 @@ input, #your_message{
 		}
 
 		#header_homePage{
-			text-align: center;
-			margin-left: 20%;
+			justify-content: center;
+			margin-left: 10%;
 		}
 
 		.start_your_journey{
 			justify-content: center;
-			margin-top: 50%;
+			margin-top: 60%;
 			margin-left: 40%;
 		}
-	}
-	#nav_contactUs{
-		background-color: rgba(255, 255, 255,0.6);
+
+		#HomePage{
+			background-size: 100% 100%;
 		}
 
-	#submit_contactUs{
+	}
+
+
+	#submit_contactUs, #submit_contactUs_signIn{
 		padding: 5%;
 		cursor: pointer;
 		margin-left: 30%;
