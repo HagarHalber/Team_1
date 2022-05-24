@@ -1,133 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriPal- Create Profile</title>
-    <link rel="stylesheet" href="../static/tripal_styling.css"> 
-   <!----<script src="multi-input.js"></script>   --------->
-</head>
-
-<body id="createProfile_body">
-
-    <nav class="nav">
-        <ul class="nav-list">
-            <li class="list-item">
-                <a href="HomePage.html">Home</a>
-            </li>
-            <li class="list-item">
-                <a href="TripalAboutUs.html">About Us</a>
-            </li>
-            <li class="list-item">
-                <a href="TripalContactUs.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="createProfile_container">
-    <h1 id="createProfile_h1">
-        Create Your Profile
-    </h1>
-    
-    <form action="URL" method="post" id="form_createProfile">
-        <div id="main_createProfile">
-
-            <div id="left_content">
-        <label  for="First_Name">First Name:</label>
-        <input type="text" id="First_Name" name="First_Name" required><br>
-        
-        <label id="lastName" for="Last_Name" >Last Name:</label>
-        <input type="text" id="Last_Name" name="Last_Name" required><br>
-       
-        <label id="age" for="Age" >Your Age:</label>
-        <input type="number" id="Age" name="Age" min="18"><br>
-
-        <label id="Startdates" for="StartDates" >I Want To Travel From:</label>
-        <input type="date" id="startDates" name="StartDates" required>
-
-        <label id="enddates" for="endDates" >To:</label>
-        <input type="date" id="endDates" name="EndDates" required><br>
-
-        <label  id="bigGroups" for="bigGroups" >Travel in big groups?</label>
-        <input type="checkbox" id="bigGroups" name="bigGroups" ><br>
-
-        <label for="languages">Spoken Language:</label>
-            <select name="SpokenLanguage" id="SpokenLanguage">
-                <option value="english">English</option>
-                <option value="hebrew">Hebrew</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Arabic">Arabic</option>
-                <option value="Greman">Greman</option>
-                <option value="Italian">Italian</option>
-                <option value="french">french</option>
-                <option value="mandarin">Mandarin</option>
-            </select required> <br>
-
-            <div>
-                <label for="photo" >Apload Your Profile:</label><br>
-                <input type="file" id="myFile" name="filename"  accept="image/png, image/gif, image/jpeg" required>
-            </div>
-
-
-        </div>
-
-
-        <div id="right_content">
- 
-
-        <label id="budget" for="budget" >Your Budget Per Week:</label>
-        <input type="number" id="Budget" name="Budget" min="0"> US$ <br>
-
-        <label for="hobbies">Hobbies:</label>
-
-        <select name="hobbies" id="hobbies">
-            <option value="Hiking">Hiking</option>
-            <option value="Painting">Painting</option>
-            <option value="Sports"> Doing Sports</option>
-            <option value="Sculpt">Sculpting</option>
-            <option value="books">Reading books</option>
-            <option value="Baking">Baking</option>
-            <option value="Cooking">Cooking</option>
-            <option value="Yoga">Yoga</option>
-        </select> <br>
-
-
-        <label for="Vibes">My Vibe:</label>
-
-        <select name="Vibes" id="Vibes">
-            <option value="Extreme">Extreme</option>
-            <option value="Relaxed">Relaxed</option>
-            <option value="Adventurous"> Adventurous</option>
-            <option value="Flowing">Flowing</option>
-            <option value="Strolling">Strolling</option>
-            <option value="Traveling">Traveling</option>
-            <option value="Trekking">Trekking</option>
-            <option value="shopping">Shopping</option>
-            <option value="chilling">Chilling</option>
-        </select> <br>
-
-            <div>
-            <label for="freeText" >About You:</label><br>
-            <textarea name="freeText" id="freeText" cols="50" rows="12"></textarea><br>
-
-            <label for="facebook_link" >Your Facebook Profile:</label>
-            <textarea name="Facebook" id="Facebook" cols="30" rows="1"></textarea><br>
-
-            <label for="instagram_link" >Your Instagram Profile:</label>
-            <textarea name="Instagram" id="Instagram" cols="29" rows="1"></textarea><br>
-            </div>
-
-            <div id="create_button">
-                <button type="button"> Create Your Profile <br>
-            </div>
-
-
-
-        
-
-        </div> 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TriPal - Create Profile</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/CreateProfile.css">
+<script defer src="../static/CreateProfile.js"></script>
+</head> 
+<body>
+<nav class="nav">
+    <ul class="nav-list">
+        <li class="list-item">
+            <a href="HomePage.html">Home</a>
+        </li>
+        <li class="list-item">
+            <a href="TripalAboutUs.html">About Us</a>
+        </li>
+        <li class="list-item">
+            <a href="TripalContactUs.html">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+<div class="container col-md-6">
+    <div class="main">
+    <div class="row justify-content-center">
+    <form onsubmit="return DateCheck()">
+    <div class="header">
+            <h1>Create Your Profile</h1>
     </div>
-      
+    <div class="form-row">
+        <div class="form-group col-md-6">
+        <label  for="First_Name">First Name:</label>
+        <input type="text" class="form-control" id="First_Name" name="First_Name" required>
+        </div>
+        <div class="form-group col-md-6">
+        <label id="lastName" for="Last_Name" >Last Name:</label>
+        <input type="text" class="form-control" id="Last_Name" name="Last_Name" required>
+        </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-4">
+        <label id="age" for="Age" >Your Age:</label>
+        <input type="number" class="form-control"  id="Age" name="Age" min="18">
+    </div>
+    <div class="form-group col-md-4">
+        <label  id="bigGroups" for="bigGroups" >Travel in big groups?</label>
+        <input type="checkbox" class="form-control" id="bigGroups" name="bigGroups" >
+    </div>
+</div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+        <label id="Startdates" for="StartDates" >From</label>
+        <input type="date" class="form-control" id="startDates" name="StartDates" required>
+        </div>
+        <div class="form-group col-md-6">
+        <label id="enddates" for="endDates" >To:</label>
+        <input type="date" class="form-control" id="endDates" name="EndDates" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="languages">Spoken Language:</label>
+            <select name="SpokenLanguage" class="form-control" id="SpokenLanguage">
+            <option value="english">English</option>
+            <option value="hebrew">Hebrew</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Greman">Greman</option>
+            <option value="Italian">Italian</option>
+            <option value="french">french</option>
+            <option value="mandarin">Mandarin</option>
+        </select required>
+            </div>
+            <div class="form-group col-md-8">
+            <label for="photo" >Apload Your Profile:</label><br>
+            <input type="file" class="form-control" id="myFile" name="filename"  accept="image/png, image/gif, image/jpeg" required>
+            </div>
+    </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label id="budget" for="budget" >Your Budget Per Week:</label>
+                <input type="number" class="form-control"  id="Budget" name="Budget" min="0"> 
+            </div>
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="hobbies">Hobbies:</label>
+                <select name="hobbies" class="form-control" id="hobbies">
+                    <option value="Hiking">Hiking</option>
+                    <option value="Painting">Painting</option>
+                    <option value="Sports"> Doing Sports</option>
+                    <option value="Sculpt">Sculpting</option>
+                    <option value="books">Reading books</option>
+                    <option value="Baking">Baking</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Yoga">Yoga</option>
+                </select> 
+            </div>
+            <div class="form-group col-md-6">
+                <label for="Vibes">My Vibe:</label>
+                <select name="Vibes" class="form-control"  id="Vibes">
+                    <option value="Extreme">Extreme</option>
+                    <option value="Relaxed">Relaxed</option>
+                    <option value="Adventurous"> Adventurous</option>
+                    <option value="Flowing">Flowing</option>
+                    <option value="Strolling">Strolling</option>
+                    <option value="Traveling">Traveling</option>
+                    <option value="Trekking">Trekking</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="chilling">Chilling</option>
+                </select> 
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="freeText" >About You:</label><br>
+                <textarea name="freeText" class="form-control" id="freeText" cols="50" rows="5"></textarea> 
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="facebook_link" >Your Facebook Profile:</label>
+                <textarea type="url" pattern="https://www.facebook.com/.+" name="Facebook" class="form-control"  id="Facebook" cols="30" rows="1"></textarea>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="instagram_link" >Your Instagram Profile:</label>
+                <textarea type="url" pattern="https://www.instagram.com/.+" name="Instagram" class="form-control" id="Instagram" cols="29" rows="1"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <div id="create_button">
+                <button class="form-control" type="submit"> Create Your Profile <br>
+            </div>
+        </div>
+    </form>
+
+</div>
+</div>
+</div>
 </body>
 </html>

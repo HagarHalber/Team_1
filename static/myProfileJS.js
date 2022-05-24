@@ -24,6 +24,9 @@ function edit() {
 function save () {
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    var isValidDateTo = Date.parse(To.textContent);
+    var isValidDateFrom = Date.parse(From.textContent);
+
     if(FullName.textContent == ''){
         alert("Full name is required");
     }
@@ -36,8 +39,11 @@ function save () {
     else if(Destnation.textContent == ''){
         alert("Destnation is required");
     }
-    else if(From.textContent == ''){
-        alert("From is required");
+    else if(isNaN(isValidDateFrom) || isValidDateFrom < today.Date){
+        alert("From must be a date dd/mm/yy");
+    }
+    else if(isNaN(isValidDateTo)){
+        alert("To must be a date dd/mm/yy");
     }
     else{
         FullName.contentEditable = false;
@@ -46,13 +52,11 @@ function save () {
         Destnation.contentEditable = false;
         From.contentEditable = false;
         To.contentEditable = false;
-        FullName.style.backgroundColor = "#f5f5f5";
-        Email.style.backgroundColor = "#f5f5f5";
-        PhoneNumber.style.backgroundColor = "#f5f5f5";
-        Destnation.style.backgroundColor = "#f5f5f5";
-        From.style.backgroundColor = "#f5f5f5";
-        To.style.backgroundColor = "#f5f5f5";
+        FullName.style.backgroundColor = "#cdf2f3b3";
+        Email.style.backgroundColor = "#cdf2f3b3";
+        PhoneNumber.style.backgroundColor = "#cdf2f3b3";
+        Destnation.style.backgroundColor = "#cdf2f3b3";
+        From.style.backgroundColor = "#cdf2f3b3";
+        To.style.backgroundColor = "#cdf2f3b3";
     }
-    
-  
 } 
