@@ -10,7 +10,6 @@ if(mm<10){
 } 
 
 today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("startDates").setAttribute("min", today);
 
 function DateCheck()
 {
