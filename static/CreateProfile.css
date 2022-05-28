@@ -55,3 +55,7 @@ body{
     font-family: fonttry;
     src: url(../static/ShadowsIntoLight-Regular.ttf);
 }
+
+.select_multiple{
+    font-size: smaller;
+}
