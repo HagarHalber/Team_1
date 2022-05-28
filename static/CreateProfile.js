@@ -1,3 +1,5 @@
+
+
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
@@ -10,6 +12,7 @@ if(mm<10){
 } 
 
 today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("startDates").setAttribute("min", today);
 
 function DateCheck()
 {

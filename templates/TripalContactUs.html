@@ -25,7 +25,7 @@
     <h1 id="Header_contactUs">Contact Us</h1>
     
    
-        <form action="/action_page.php" method="get" id="form_contactUs">
+        <form action="HomePage.html" method="get" id="form_contactUs" onsubmit="confirm( 'Thank you for your inquiry, we will get back to you soon!' )">
         <table  cellpadding="8" cellspacing="0">
         <tr> <td>
        
@@ -49,7 +49,7 @@
         </td> </tr> <tr> <td>
         * - required fields
         </td> <td> 
-        <input name="skip_Submit" type="submit" value="Submit" id="submit_contactUs"/>
+        <button name="skip_Submit" type="submit" id="submit_contactUs" onclick="window.location.href='myprofile_shira.html'">Submit</button>
         </td> </tr>
         </table>
         </form>

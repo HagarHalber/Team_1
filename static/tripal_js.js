@@ -11,6 +11,3 @@ signInButton.addEventListener('click', () => {
 });
 
 
-
-/*	{multiInput.getValues().join(' and ')}*/
-

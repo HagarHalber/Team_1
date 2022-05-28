@@ -26,19 +26,15 @@ body{
     justify-content: space-around; 
     width: 100%;
 	font-size: 20px;
-}
-
-
-.nav-list {
-    list-style-type: none;
     text-align: right;
     margin-right: 20px;
+
 }
 
-.nav-list .list-item{
+.nav-list{
     display: inline-block;
     padding: 7px;
-    position: relative;right: -160%;
+    position: relative;right:-35%
 
 }
 

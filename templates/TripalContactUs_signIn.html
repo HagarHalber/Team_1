@@ -28,14 +28,14 @@
     <h1 id="Header_contactUs">Contact Us</h1>
     
    
-        <form action="/action_page.php" method="get" id="form_contactUs">
+        <form action="myprofile_itamar.html" method="get" id="form_contactUs" onsubmit="confirm( 'Thank you for your inquiry, we will get back to you soon!' )">
         <table  cellpadding="8" cellspacing="0">
           
         <label for="Comments">Your Message:</label>
         </td> <td>
         
         <textarea  id="your_message" name="Comments" rows="7" cols="40" required></textarea>
-        <input name="skip_Submit" type="submit" value="Submit" id="submit_contactUs_signIn"/>
+        <button name="skip_Submit" type="submit" id="submit_contactUs" onclick="window.location.href='myprofile_itamar.html'">Submit</button>
         </td> </tr>
         </table>
         </form>

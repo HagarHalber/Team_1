@@ -1,6 +1,6 @@
 #HomePage{
     background: url("../static/homePagepic.jpg") no-repeat ;
-    background-size: 100% 500px;
+    background-size: 100% 100%;
     background-position-y: 70px;
     font-family: fonttry;
 }
@@ -501,6 +501,9 @@ input, #your_message{
 		cursor: pointer;
 		margin-left: 30%;
 		border-radius: 10px;
+		width: 100px;
+		color: darkblue;
+		background-color: white;
 	}
 
 #myFile{
