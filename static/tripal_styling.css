@@ -1,11 +1,38 @@
 #HomePage{
-    background: url("../static/homePagepic.jpg") no-repeat ;
+    background: url(../static/homePagepic.jpg) no-repeat ;
     background-size: 100% 100%;
     background-position-y: 70px;
     font-family: fonttry;
+	animation: change 10s infinite ease-in-out;
 }
+
+@keyframes change{
+
+    0%{
+        background-image: url(../static/background_aboutUs.jpeg);
+    }
+
+    25%{
+        background-image: url(../static/homePagepic.jpg);
+    }
+    50%{
+        background-image: url(../static/homePagePic3.jpeg)
+    }
+	75%{
+        background-image: url(../static/homePagePic2.jpeg)
+    }
+    100%{
+        background-image: url(../static/background_aboutUs.jpeg);
+    }
+}
+
 body{
 	font-family: fonttry;
+}
+
+.active {
+    border: 2px solid rgb(91, 184, 238);
+    border-radius: 15px;
 }
 
 .nav {
