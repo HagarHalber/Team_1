@@ -25,21 +25,27 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form  id="signUp_form" action="#">
+            <form  id="signUp_form" action="createProfile.html">
                 <h1>Create an Account</h1>
                 <input type="text" placeholder="Name" class="input_signUp"required/>
-                <input type="tel" placeholder="Phone Number" class="input_signUp" required>
-                <input type="email" placeholder="Email" class="input_signUp" required/>
-                <input type="password" placeholder="Password" class="input_signUp" required/>
-                <button id="signUp_button"><a href="createProfile.html"> Sign Up</a></button>
+                <input type="tel" placeholder="123-4567-8901" class="input_signUp" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="email" placeholder="abc@def.com" class="input_signUp" required pattern="[^ @]*@[^ @]*.com">
+                <input type="password" placeholder="Password" class="input_signUp" required minlength="8">
+                <button type="submit" id="signUp_button">Sign Up</a></button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="myprofile.html">
                 <h1>Sign in</h1>
+<<<<<<< HEAD
                 <input type="email" placeholder="Email" class="input_signUp" required/>
                 <input type="password" placeholder="Password" class="input_signUp" required />
                 <button type="submit"><a href="myprofile.html"> Sign In</a></button>
+=======
+                <input type="email" placeholder="abc@def.com" class="input_signUp" required pattern="[^ @]*@[^ @]*.com">
+                <input type="password" placeholder="Password" class="input_signUp" required minlength="8"/>
+                <button type="submit">Sign In</a></button>
+>>>>>>> 3aa47f41debd27fbdd9de2f2aac633ec1e62c494
             </form>
         </div>
         <div class="overlay-container">
