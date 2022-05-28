@@ -1,7 +1,7 @@
 **ReadMe – Client Side
 TriPal**
 
-Hagar Halber 315973461| Ofir Zairi 315875161 | Amit Ganzi 316538594| Shira Yahav 316298132
+Hagar Halber 315973461 | Ofir Zairi 315875161 | Amit Ganzi 316538594 | Shira Yahav 316298132
 
 TriPal is a social platform that helps travelers find travel partners based on their unique preferences and creates potential matches.
 
